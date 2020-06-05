@@ -1,0 +1,22 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+  compression:
+    mime-types: text/html, text/css, application/json
+spring:
+  profiles:
+    active: local
+springdoc:
+  api-docs:
+    path: /openapi/api-docs
+  swagger-ui:
+    path: /openapi/swagger-ui.html
+logging:
+  config: classpath:logback/logback-spring.xml
+
+
+#      jdbc-url: jdbc:mysql://localhost:3306/insuapp?characterEncoding=utf8&useSSL=false&autoReconnection=true
+#      username: hope
+#      password: 1234
+#      driver-class-name: com.mysql.cj.jdbc.Driver
